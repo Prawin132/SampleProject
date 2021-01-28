@@ -24,7 +24,7 @@ pipeline {
 
         stage('check logs') {
             steps {
-                filterLogs ('WARNING', 1)
+                Logsfilter ('WARNING', 1)
                 echo 'Checking logs...'
             }
         }
