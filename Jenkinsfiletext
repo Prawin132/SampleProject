@@ -1,0 +1,40 @@
+@Library('sharedlib@main') _
+
+
+
+pipeline {
+        agent any
+
+        tools {
+            maven 'maven-3.6.0'
+        }
+
+        stages {
+            stage('Start'){
+                steps{
+                    text.info 'Starting Pipeline'
+                }
+            }
+            stage('build') {
+                steps {
+                    sh 'mvn -B -DskipTests clean package'
+                }
+            }
+
+            stage('test') {
+                steps {
+                    parallel (
+                    "unit tests": { sh 'mvn test' },
+                    "integration tests": { sh 'mvn integration-test' }
+                )
+                }
+            }
+
+            stage('end'){
+                steps{
+                    text.warning 'Ending Pipeline'
+                }
+            }
+        }
+    }
+	
