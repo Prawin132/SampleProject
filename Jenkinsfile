@@ -1,2 +1,2 @@
-@Library('sharedlib@master') _
+@Library('sharedlib@main') _
 samplepipeline([:])
