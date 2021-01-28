@@ -1,23 +1,31 @@
+@Library('sharedlib@main') _
+
 pipeline {
     agent any
-    
-    tools{
+
+    tools {
         maven 'maven-3.6.0'
     }
-    
-    stages{
-        
-        stage('build'){
-            steps{
+
+    stages {
+        stage('build') {
+            steps {
                 sh 'mvn -B -DskipTests clean package'
-                echo "Building...."
+                echo 'Building....'
             }
         }
 
-        stage('test'){
-            steps{
+        stage('test') {
+            steps {
                 sh 'mvn test'
-                echo "Testing..."
+                echo 'Testing...'
+            }
+        }
+
+        stage('check logs') {
+            steps {
+                filterLogs ('WARNING', 1)
+                echo 'Checking logs...'
             }
         }
     }
