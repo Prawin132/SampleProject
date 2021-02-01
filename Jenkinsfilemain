@@ -1,5 +1,5 @@
 @Library("mvn-sharedlib") _
 hello {
         FIRST_NAME = 'sravan'
-        LAST_NAME = 'P'
+        LAST_NAME = 'Pp'
     }
