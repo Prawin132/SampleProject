@@ -1,2 +1,6 @@
 @Library('sharedlib@main') _
 Jenkinsfilehello([:])
+    environment {
+        FIRST_NAME = 'krishna'
+        LAST_NAME = 'K'
+    }
