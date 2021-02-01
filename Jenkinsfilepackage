@@ -1,0 +1,4 @@
+@Library("mvn-sharedlib") _
+package {
+        PACKAGE_NAME = ''
+    }
