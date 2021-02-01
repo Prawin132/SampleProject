@@ -1,4 +1,4 @@
-@Library('sharedlib@main') _
+@Library('mvn-sharedlib') _
 Jenkinsfilehello {
         FIRST_NAME = 'krishna'
         LAST_NAME = 'K'
