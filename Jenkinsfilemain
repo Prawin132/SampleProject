@@ -1,6 +1,5 @@
 @Library('sharedlib@main') _
-Jenkinsfilehello([:])
-    environment {
+Jenkinsfilehello([:]) {
         FIRST_NAME = 'krishna'
         LAST_NAME = 'K'
     }
