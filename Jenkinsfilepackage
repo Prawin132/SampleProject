@@ -1,6 +1,6 @@
 @Library("sharedlib") _
 package2 {
         myprop = 'properties.txt'
-        JOB_NAME = "${JOB_NAME}"
+        JOB_NAME = "SampleProject"
     }
     
