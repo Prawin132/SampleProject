@@ -1,4 +1,4 @@
-@Library("mvn-sharedlib") _
+@Library("sharedlib") _
 package1 {
         PACKAGE_NAME = 'drop2'
     }
