@@ -1,5 +1,6 @@
 @Library("sharedlib") _
 package2 {
+        myprop="properties.groovy"
         JOB_NAME="SampleProject"
     }
     
