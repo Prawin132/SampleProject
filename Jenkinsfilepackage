@@ -1,4 +1,4 @@
 @Library("sharedlib") _
-package1 {
+package2 {
         myprop = 'properties.txt'
     }
