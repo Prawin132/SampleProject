@@ -1,6 +1,6 @@
 @Library("mvn-sharedlib")_
 package2 {
-        myprop="/TS/Hyd/gachibowli/Kukatpally.txt"
+        myprop="/gachibowli/Kukatpally.txt"
         JOB_NAME="${JOB_NAME}"
     }
     
